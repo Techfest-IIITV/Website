@@ -4,6 +4,7 @@ import * as firebase from "firebase";
 
 import Header from './header';
 import Countdown from './Countdown';
+import EventCard from './EventCard';
 import {signedIn, signedOut} from "../actions/authActions";
 import '../css/index.css'
 
