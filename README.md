@@ -2,7 +2,7 @@
 
 > Website of the Techfest 2018 of IIITV
 
-## Setup Locally
+## Development
 
 #### Install dependencies
 ```sh
