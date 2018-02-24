@@ -3,3 +3,7 @@ body {
 	width: 100vw;
 	background: black;
 }
+
+.countdown {
+	display: flex;
+}
