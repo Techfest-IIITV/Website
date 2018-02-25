@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 class Selector extends React.Component {
   render () {
     let componentClass = 'selector';
