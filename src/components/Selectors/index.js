@@ -1,9 +1,6 @@
 import React from 'react';
 
-
-
 import events from '../../data/events';
-
 import Selector from '../Selector';
 
 class Selectors extends React.Component {
@@ -13,17 +10,6 @@ class Selectors extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-
-  /*changeActive(id) {
-      this.setState({
-          activeID:id,
-          wrapperStyle:{
-              backgroundImage: `url('${events[id].img}')`
-          },
-          panelStyle : {background : events[id].colour}
-      });
-  }*/
-
   handleClick(id) {
     if (id !== this.props.activeID) {  //PROBLEM
       this.props.handleChangeActive(id);
@@ -31,8 +17,8 @@ class Selectors extends React.Component {
       return;
     }
   }
+  
   render (){
-
     return (
       <div className="selectors">
         {events.map((item) =>
