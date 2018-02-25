@@ -1,31 +1,31 @@
 export const events = [{
   id: 0,
-  header: 'Gluten-free Bicycle',
-  body: 'Chillwave knausgaard chambray flannel tumblr, narwhal microdosing blog...',
+  header: 'Event 1',
+  body:   'Here lies the description of one of the events of the tech-fest 2018,Cerebro',
   colour: '#242846',
   img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/rvc1.jpg'
 }, {
   id: 1,
-  header: 'Post-ironic Disrupt',
-  body: 'Swag biodiesel disrupt retro fashion, salvia food truck kitsch wolf DIY...',
+  header: 'Event 2',
+  body: 'Here lies the description of one of the events of the tech-fest 2018,Cerebro',
   colour: '#ba9077',
   img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/rvc2.jpg'
 }, {
   id: 2,
-  header: 'Lumber-Sexual Roof Party ',
-  body: 'Flexitarian 3 wolf moon cliche, migas scenester street art...',
+  header: 'Event 3',
+  body: 'Here lies the description of one of the events of the tech-fest 2018,Cerebro',
   colour: '#1ABC9C',
   img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/rvc3.jpg'
 }, {
   id: 3,
-  header: 'Vegan hoodie trust fund',
-  body: 'Farm-to-table tousled try-hard, normcore ethical tilde iPhone...',
+  header: 'Event 4',
+  body: 'Here lies the description of one of the events of the tech-fest 2018,Cerebro',
   colour: '#C0392B',
   img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/rvc4.jpg'
 }, {
   id: 4,
-  header: 'cliche craft beer',
-  body: 'Tote bag flannel normcore polaroid +1. Quinoa actually 90s sustainable...',
+  header: 'Event 5',
+  body: 'Here lies the description of one of the events of the tech-fest 2018,Cerebro',
   colour: '#513B56',
   img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/rvc5.jpg'
 }]
