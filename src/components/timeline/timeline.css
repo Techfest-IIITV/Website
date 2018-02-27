@@ -12,25 +12,6 @@ header:after, #timeline .timeline-item:after, header:before, #timeline .timeline
   -moz-box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-}
-
-body {
-  background: #000;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  font-family: helvetica, arial, tahoma, verdana;
-  line-height: 20px;
-  font-size: 14px;
-  color: #726f77;
-}
-
-img {
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
 }
