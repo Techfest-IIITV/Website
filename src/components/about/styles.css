@@ -2,3 +2,35 @@
   padding-left: 8px;
   border-left: 4px solid #FF6E2C;
 }
+
+.team-info {
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 150px;
+  display: flex;
+}
+
+.span-color {
+  color: #FF6E2C;
+}
+
+.Team {
+  display: flex;
+}
+
+.mem-description {
+  line-height: 2.2px;
+  margin: 0px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.uk-border-circle {
+  margin-bottom: 20px;
+}
+
+.team-header {
+  color: #FF6E2C;
+  text-align: center;
+}

@@ -51,7 +51,7 @@ class Event extends React.Component {
           </div>
           <div className = "rules"><b><h3 className= "header-rules">Rules</h3></b>
             <ul>
-              {event.rules.map((rule, idx) => <li key={idx}>{rule}</li>)}
+              {event.rules.map((rule, idx) => <li className="rules-bullets" key={idx}>{rule}</li>)}
             </ul>
           </div>
 

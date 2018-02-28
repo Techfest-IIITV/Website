@@ -17,7 +17,29 @@ class About extends React.Component {
           ex ea <span className={'primary-color'}>commodo consequat</span>. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
           fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.</p>
-      </div>
+
+        <h2 className="team-header"><u>Core Team</u></h2>
+        <div className="Team">
+            <div className="team-info">
+              <div class="uk-width-auto">
+                <img class="uk-border-circle" width="100" height="100" src="http://via.placeholder.com/300.png/09f/fff  "></img>
+              </div>
+              <div className="mem-description">
+                <p>Anshuman Verma</p>
+                <p><span className="span-color">[</span> WEB DEVELOPER <span className="span-color">]</span></p>
+              </div>
+            </div>
+            <div className="team-info">
+              <div class="uk-width-auto">
+                <img class="uk-border-circle" width="100" height="100" src="http://via.placeholder.com/300.png/09f/fff  "></img>
+              </div>
+              <div className="mem-description">
+                <p>Anshuman Verma</p>
+                <p><span className="span-color">[</span> WEB DEVELOPER <span className="span-color">]</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
       <div className={'uk-margin-large-top'}>
         <div className={'about-title'}>Sponsors</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
