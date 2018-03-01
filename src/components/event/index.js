@@ -25,7 +25,7 @@ class Event extends React.Component {
           <div className="uk-margin-large-top uk-flex uk-flex-center butt">
             <div>{this.props.user ? (
                 isRegistered ? <button className="unregister"
-                                       onClick={() => this.props.unregisterFromEvent(event)}>Unegister</button> :
+                                       onClick={() => this.props.unregisterFromEvent(event)}>Unregister</button> :
                   <button className="register" onClick={() => this.props.registerToEvent(event)}>Register</button>) :
               'Please log in to register!'}
             </div>
@@ -41,9 +41,9 @@ class Event extends React.Component {
           <div className={'uk-margin-large-top'}>
             <span className="contacts">Contacts:</span>
             <div className={'uk-margin-top'}>
-              {Object.keys(event.contact).map(role => <div className={'uk-flex uk-flex-between'} key={role}>
-                <div>{event.contact[role].name}</div>
-                <div className={'primary-color'}>{event.contact[role].phone}</div>
+              {Object.keys(event.contact).map(role => <div className={'primary-color uk-margin-top'} key={role}>
+                <span className= "event-contact-name">{event.contact[role].name}</span>
+                <b> : {event.contact[role].phone}</b>
               </div>)}
             </div>
           </div>

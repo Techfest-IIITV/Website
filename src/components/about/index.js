@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-import Team from '../team';
+import Team from '../Team';
 import './styles.css';
 
 class About extends React.Component {
