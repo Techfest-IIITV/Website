@@ -33,7 +33,7 @@ class Event extends React.Component {
                   <button className="register" onClick={() => this.props.registerToEvent(event)}>Register</button>) :
               'Please log in to register!'}
             </div>
-            <button className="uk-margin-left go-back" onClick={() => this.props.history.push('/')}> BACK TO EVENTS
+            <button className="uk-margin-left go-back" onClick={() => this.props.history.push('/')}> Back to Events
             </button>
           </div>
         </div>
