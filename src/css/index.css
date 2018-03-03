@@ -8,7 +8,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   color: white;
-  font-family: 'Roboto mono', monospace;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .team-ext, .team-ext:hover, .team-ext:focus {
