@@ -35,6 +35,7 @@
 
 .icons {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .single-icon {
@@ -42,8 +43,62 @@
   padding-left: 15px;
   font-size: x-large;
   color: #FF6E2C;
+  padding-top:0px;
 }
 
 .links-section a {
   text-decoration: none;
+}
+@media screen and (max-width: 560px) and (min-width: 320px) {
+  .uk-card.uk-card-body.uk-margin-left {
+    left:-1%;
+    width: 100%;
+    position: relative;
+    top: 0%;
+    font-size: 10px;
+  }
+
+  .fest-logo {
+    width: 40vw;
+    position: relative;
+   display: none;
+  }
+  .icons {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    left: -5%;
+    top: -5%;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+  .festnew-logo {
+    display: flex !important;
+  }
+
+}
+
+.festnew-logo {
+  width: 100%;
+  padding-left: 4%;
+  padding-top: 8%;
+  display: none;
+
+}
+
+.foot-int{
+  margin-left: 22%;
+  position: relative;
+  left: -6%;
+}
+
+.foot-fest-logo{
+  margin-left: 30%;
+  width:80%;
+}
+.foot-int-logo{
+  margin-left: 30%;
+  max-width:140%;
 }

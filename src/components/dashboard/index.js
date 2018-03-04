@@ -3,16 +3,18 @@ import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 import _ from 'lodash';
 import * as firebase from 'firebase';
+import './dashboard.css';
 
 import {unregisterFromEvent} from "../../actions/eventActions";
 import {saveUserPhone} from "../../actions/userPhoneReducer";
 
 class Dashboard extends React.Component {
   componentDidMount() {
+    document.body.scrollTop = 0;
     this.mobileInput.addEventListener('keyup', event => {
       event.preventDefault();
       if (event.keyCode === 13) {
-        this.mobileInput.value.toString().length == 10 ? this.props.saveUserPhone(this.mobileInput.value): alert('Please enter a valid number');
+        this.mobileInput.value.toString().length === 10 ? this.props.saveUserPhone(this.mobileInput.value): alert('Please enter a valid number');
         this.mobileInput.value = '';
       }
     })
@@ -56,9 +58,9 @@ class Dashboard extends React.Component {
         </tr>
         </thead>
         <tbody>
-        {userRegisteredEvents.map(event =>
+        {userRegisteredEvents.map((event, index) =>
           <tr key={event.id}>
-            <td>{event.id}</td>
+            <td>{index+1}</td>
             <td>{event.name}</td>
             <td>{event["start-time"]}</td>
             <td>
@@ -74,7 +76,7 @@ class Dashboard extends React.Component {
         <input ref={ref => this.mobileInput = ref} className="uk-input uk-form-width-medium" type="number"
                id={'phone-input'} placeholder={'Mobile'}/>
         <button className="uk-button uk-button-secondary uk-margin-left" onClick={() => {
-          this.mobileInput.value.toString().length == 10 ? this.props.saveUserPhone(this.mobileInput.value): alert('Please enter a valid number');
+          this.mobileInput.value.toString().length === 10 ? this.props.saveUserPhone(this.mobileInput.value): alert('Please enter a valid number');
           this.mobileInput.value = ''
         }}>Save
         </button>
