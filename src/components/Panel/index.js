@@ -40,8 +40,8 @@ class Panel extends React.Component {
           <img src={this.props.event.img || './fest-logo.png'} className={'uk-margin-bottom panel-img'} alt=""/>
         </div>
         <h3 className="uk-card-title white">{this.props.event.name}</h3>
-        <p className={'uk-text-left panel-team-size primary-color'}>TEAM SIZE: <b>{this.props.event['team-size']}</b>
-        </p>
+        {/* <p className={'uk-text-left panel-team-size primary-color'}>TEAM SIZE: <b>{this.props.event['team-size']}</b>
+        </p> */}
         {/* <p className={'uk-text-left panel-team-size primary-color'}>{dateString}</p> */}
         <p className={'uk-text-left panel-team-size primary-color'}>Details will be updated soon!</p>
         <p className={'uk-text-left panel-content'}>{this.props.event.description}</p>
