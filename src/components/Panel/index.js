@@ -43,7 +43,7 @@ class Panel extends React.Component {
         <p className={'uk-text-left panel-team-size primary-color'}>TEAM SIZE: <b>{this.props.event['team-size']}</b>
         </p>
         {/* <p className={'uk-text-left panel-team-size primary-color'}>{dateString}</p> */}
-        <p className={'uk-text-left panel-team-size primary-color'}>Date : Will be updated soon!</p>
+        <p className={'uk-text-left panel-team-size primary-color'}>Details will be updated soon!</p>
         <p className={'uk-text-left panel-content'}>{this.props.event.description}</p>
         <p className={'panel-buttons'}>
           {this.props.user && (isRegistered ?
