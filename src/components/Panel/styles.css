@@ -1,14 +1,15 @@
 .event-panel {
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  border: 1px solid whitesmoke;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  text-align: center;
 }
 
 .event-panel:hover {
-  border: 1px solid #FF6E2C;
+  border: 1px solid #0d32cc;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -51,7 +52,6 @@
 }
 
 .panel-more {
-  border: 1px solid #FF6E2C;
   padding: 8px 5px;
   cursor: pointer;
   white-space: nowrap;
@@ -60,10 +60,10 @@
 
 .panel-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .uk-card.uk-card-body.event-panel {
-  padding: 30px 30px !important;
+  padding: 30px 30px 0px 30px !important;
 }
 
 .panel-img-container {
