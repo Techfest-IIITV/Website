@@ -43,3 +43,17 @@
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
 }
+
+.divider-container {
+  width: 98%;
+  color: #0d32cc
+}
+
+.uk-divider-vertical {
+  height: 40vh;
+  border-right: 1px solid #0d32cc;
+  width: 1px;
+  display: flex;
+  flex-flow: column;
+}
+
