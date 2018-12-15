@@ -38,9 +38,7 @@ class EventList extends React.Component {
         </div>
       })
     }
-
-    console.log(listEventsJsx)
-
+    
     return (
       <Fragment>
         {listEventsJsx ? listEventsJsx : (<div style={{color: 'white'}} className='section'>Loading...</div>)}
