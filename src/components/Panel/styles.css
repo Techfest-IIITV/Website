@@ -1,5 +1,5 @@
 .event-panel {
-  border: 1px solid whitesmoke;
+  border: 1px solid rgba(255, 255, 255, 0.22);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -9,7 +9,7 @@
 }
 
 .event-panel:hover {
-  border: 1px solid #0d32cc;
+  border: 1px solid #FF6E2C;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
