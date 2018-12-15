@@ -19,12 +19,16 @@ class EventList extends React.Component {
         listEvents.push(arr)
       }
       
+      const listEventsLength = listEvents.length + 1
+
       listEventsJsx = listEvents.map((chunk, i) => {
-        return  <div key={i} className={'uk-container event-list section'}>
+        return  <div key={i} className='uk-container event-list section'>
           <div className={'uk-text-center uk-margin-large-bottom'}>
             <span className={'event-list-heading'}>PAST</span>
             {' '}
             <span className={'event-list-heading'}>EVENTS</span>
+            {' '}
+            <span className={'event-list-heading'}>{`${i+1}/${listEventsLength}`}</span>
           </div>
           <div uk-grid="true" className={'uk-grid-large uk-child-width-expand@s'}>
             {chunk.map(c => {
@@ -39,7 +43,7 @@ class EventList extends React.Component {
 
     return (
       <Fragment>
-        {listEventsJsx ? listEventsJsx : (<p style={{color: 'white'}}>Loading</p>)}
+        {listEventsJsx ? listEventsJsx : (<div style={{color: 'white'}} className='section'>Loading...</div>)}
       </Fragment>
     );
   }

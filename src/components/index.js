@@ -20,9 +20,7 @@ class Home extends React.Component {
               <div className="section">
                 <Countdown/>
               </div>
-              <div className="section">
-                <EventList />
-              </div>
+              <EventList />
             </ReactFullpage.Wrapper>
           );
         }}
@@ -31,6 +29,12 @@ class Home extends React.Component {
   }
 }
 
-export default connect()(Home);
+const mapStateToProps = state => {
+  return {
+    loading: state.event.loadingEvents
+  }
+}
+
+export default connect(mapStateToProps)(Home);
 
 
