@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-// import Particles from 'react-particles-js';
+import Particles from 'react-particles-js';
 
 import Countdown from './Countdown';
 import EventList from './eventList';
@@ -25,7 +25,7 @@ class Home extends React.Component {
           <a href="/about"><p className="divider about">About</p></a>
           <a href="/"><p className="divider team">Team</p></a>
         </div>
-        {/* <Particles params={{
+        <Particles params={{
           "particles": {
             "number": {
               "value": 160,
@@ -134,7 +134,7 @@ class Home extends React.Component {
             }
           },
           "retina_detect": true
-        }}/> */}
+        }}/>
       </div>
       <EventList/>
     </div>
