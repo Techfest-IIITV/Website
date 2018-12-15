@@ -19,7 +19,7 @@ class EventList extends React.Component {
         listEvents.push(arr)
       }
       
-      const listEventsLength = listEvents.length + 1
+      const listEventsLength = listEvents.length
 
       listEventsJsx = listEvents.map((chunk, i) => {
         return  <div key={i} className='uk-container event-list section'>
