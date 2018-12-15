@@ -34,7 +34,7 @@ class Countdown extends Component {
           </div>
         </div>
         <ul className="divider-container uk-align-left">
-          <ul className="uk-align-left">
+          <ul className="divider-wrapper uk-align-left">
             <li className="uk-divider-vertical uk-align-center"></li>
             <li className="uk-align-center" uk-icon="twitter"></li>
             <li className="uk-align-center" uk-icon="instagram"></li>

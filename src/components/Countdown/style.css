@@ -46,14 +46,29 @@
 
 .divider-container {
   width: 98%;
-  color: #0d32cc
+  margin-top: 6%;
+  color: #FF6E2C;
+  position: fixed;
+  margin-bottom: 0px;
+  left: 0%;
+  width: 10%;
 }
 
 .uk-divider-vertical {
   height: 40vh;
-  border-right: 1px solid #0d32cc;
+  border-left: 1px solid #FF6E2C;
   width: 1px;
   display: flex;
   flex-flow: column;
 }
 
+.divider-wrapper {
+  margin-top: 10%;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .divider-container {
+    display: none;
+  }
+}
