@@ -6,15 +6,15 @@
 
 .contact {
     top: 33%;
-    right: 20px;
+    right: 1rem;
 }
 
 .about {
     top: 77%;
-    right: 31px;
+    right: 1.7rem;
 }
 
 .team {
-    right: 34px;
-    top: 53%;
+    right: 2rem;
+    top: 54%;
 }

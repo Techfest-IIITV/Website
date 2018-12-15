@@ -54,7 +54,7 @@ class Header extends React.Component {
   render() {
     return <div style={{height: '72px'}}>
       <nav className="uk-navbar-container uk-margin uk-dark uk-navbar-transparent" uk-navbar="mode: click">
-        <div className="uk-navbar-right right">
+        <div className="uk-navbar-right uk-margin-xlarge-right">
           <ul className="uk-navbar-nav">
             <li className={[this.props.location.pathname === '/' ? 'uk-active' : ''].join(' ')}>
               <Link className={'heading-text'} to={'/'}><span>Home</span></Link></li>
