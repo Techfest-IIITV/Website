@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {connect} from 'react-redux';
 
 import Panel from "../Panel";
@@ -7,17 +7,40 @@ import './styles.css';
 class EventList extends React.Component {
 
   render() {
+
+    let listEventsJsx = []
+
+    if ( this.props.event ) {
+      let events = this.props.event.events;
+      let listEvents = [];
+      while (events.length !== 0) {
+        let arr = [...events.splice(0, 3)]
+        arr = arr.filter(a => a !== undefined)
+        listEvents.push(arr)
+      }
+      
+      listEventsJsx = listEvents.map((chunk, i) => {
+        return  <div key={i} className={'uk-container event-list section'}>
+          <div className={'uk-text-center uk-margin-large-bottom'}>
+            <span className={'event-list-heading'}>PAST</span>
+            {' '}
+            <span className={'event-list-heading'}>EVENTS</span>
+          </div>
+          <div uk-grid="true" className={'uk-grid-large uk-child-width-expand@s'}>
+            {chunk.map(c => {
+              return (<Panel key={c.id} event={c}/>)
+            })}
+          </div>
+        </div>
+      })
+    }
+
+    console.log(listEventsJsx)
+
     return (
-      <div className={'uk-container event-list'}>
-        <div className={'uk-text-center uk-margin-large-bottom'}>
-          <span className={'event-list-heading'}>PAST</span>
-          {' '}
-          <span className={'event-list-heading'}>EVENTS</span>
-        </div>
-        <div uk-grid="true" className={'uk-grid-large uk-child-width-expand@s'}>
-          {this.props.event.events.map((event, idx) => <Panel key={idx} event={event}/>)}
-        </div>
-      </div>
+      <Fragment>
+        {listEventsJsx ? listEventsJsx : (<p style={{color: 'white'}}>Loading</p>)}
+      </Fragment>
     );
   }
 }
