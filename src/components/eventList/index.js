@@ -22,8 +22,8 @@ class EventList extends React.Component {
       const listEventsLength = listEvents.length
 
       listEventsJsx = listEvents.map((chunk, i) => {
-        return  <div key={i} className='uk-container event-list section'>
-          <div className={'uk-text-center uk-margin-large-bottom'}>
+        return  <div key={i} className=' event-list section'>
+          <div className={'uk-text-center uk-margin-medium-bottom'}>
             <span className={'event-list-heading'}>PAST</span>
             {' '}
             <span className={'event-list-heading'}>EVENTS</span>
