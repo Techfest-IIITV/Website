@@ -31,3 +31,8 @@
   padding-right: 5%!important;
   padding-left: 5%!important;
 }
+
+.fp-tableCell {
+  vertical-align: top;
+  padding: 30px 5% 0;
+}
