@@ -5,6 +5,10 @@
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
 }
 
 .event-panel:hover {
@@ -17,7 +21,7 @@
 }
 
 .panel-content {
-  height: 9em;
+  height: 6em;
   overflow: hidden;
 }
 

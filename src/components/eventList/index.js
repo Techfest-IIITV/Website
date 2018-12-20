@@ -11,35 +11,32 @@ class EventList extends React.Component {
     if (this.props.event) {
       console.log('Helloooo')
       let events = this.props.event.events
-      let listEvents = []
-      while (events.length !== 0) {
-        let arr = [...events.splice(0, 3)]
-        arr = arr.filter(a => a !== undefined)
-        listEvents.push(arr)
-      }
+      // let listEvents = []
+      // while (events.length !== 0) {
+      //   let arr = [...events.splice(0, 3)]
+      //   arr = arr.filter(a => a !== undefined)
+      //   listEvents.push(arr)
+      // }
 
       // const listEventsLength = listEvents.length
 
-      listEventsJsx = listEvents.map((chunk, i) => {
-        return  <div key={i} className=' event-list section'>
-          {/* <div className={'uk-text-center uk-margin-medium-bottom'}>
-            <span className={'event-list-heading'}>PAST</span>
-            {' '}
-            <span className={'event-list-heading'}>EVENTS</span>
-            {' '}
-            <span className={'event-list-heading'}>{`${i+1}/${listEventsLength}`}</span>
-          </div> */}
-          <div uk-grid="true" className={'uk-grid-large uk-child-width-expand@s'}>
-            {chunk.map(c => {
-              return (<Panel key={c.id} event={c}/>)
-            })}
-          </div>
-        </div>
+      listEventsJsx = events.map((event) => {
+        return (
+          <li className='uk-width-3-4' style={{width: '400px'}} key={event.id}>
+            <Panel event={event}/>
+          </li>)
       })
     }
     return (
       <Fragment>
-        {listEventsJsx}
+        <div uk-slider="center: true" className="uk-light" style={{width:'1200px'}}>
+          <ul className='uk-slider-items uk-grid'>
+            {listEventsJsx}
+          </ul>
+          <a class="uk-light uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="uk-dark uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+          <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        </div>
       </Fragment>
     );
   }

@@ -21,7 +21,9 @@ class Home extends React.Component {
               <div className="section">
                 <Countdown/>
               </div>
-              <EventList />
+              <div className="section">
+                <EventList />
+              </div>
             </ReactFullpage.Wrapper>
           );
         }}
