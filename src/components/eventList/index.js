@@ -33,8 +33,10 @@ class EventList extends React.Component {
           <ul className='uk-slider-items uk-grid'>
             {listEventsJsx}
           </ul>
-          <a class="uk-light uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-          <a class="uk-dark uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+          <div className='uk-light'>
+            <a id='slider-arrow-left' uk-icon='icon: chevron-left; ratio: 2' class="uk-slidenav-medium uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a id='slider-arrow-right' uk-icon='icon: chevron-right; ratio: 2' class="uk-slidenav-medium uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+          </div>
           <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
         </div>
       </Fragment>
