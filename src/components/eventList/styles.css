@@ -36,3 +36,25 @@
   vertical-align: top;
   padding: 30px 5% 0;
 }
+
+.uk-slider-items li {
+	width: 33.33%;
+}
+
+/* Medium devices */
+@media screen and (max-width: 959px) {
+	.uk-slider-items li {
+		width: 50%;
+	}
+}
+
+/* Small devices */
+@media screen and (max-width: 560px) {
+	.uk-slider-items li {
+		width: 99%;
+	}
+
+	.uk-dotnav > * {
+		padding-left: 7px;
+	}
+}

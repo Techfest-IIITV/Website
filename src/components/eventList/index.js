@@ -22,14 +22,14 @@ class EventList extends React.Component {
 
       listEventsJsx = events.map((event) => {
         return (
-          <li className='uk-width-3-4' style={{width: '400px'}} key={event.id}>
+          <li className='uk-width-3-4' key={event.id}>
             <Panel event={event}/>
           </li>)
       })
     }
     return (
       <Fragment>
-        <div uk-slider="center: true" className="uk-light" style={{width:'1200px'}}>
+        <div uk-slider="finite: true,autoplay: true, autoplay-interval: 1500ms" className="uk-light" style={{width:'100%'}}>
           <ul className='uk-slider-items uk-grid'>
             {listEventsJsx}
           </ul>
