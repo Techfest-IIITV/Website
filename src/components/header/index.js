@@ -62,6 +62,8 @@ class Header extends React.Component {
               <Link className={'heading-text'} to={'/timeline'}><span>Timeline</span></Link></li>
             <li className={[this.props.location.pathname === '/about' ? 'uk-active' : ''].join(' ')}>
               <Link className={'heading-text'} to={'/about'}><span>About</span></Link></li>
+            <li className={[this.props.location.pathname === '/team' ? 'uk-active' : ''].join(' ')}>
+              <Link className={'heading-text'} to={'/team'}><span>Team</span></Link></li>
             <li className={[this.props.location.pathname === '/dashboard' ? 'uk-active' : ''].join(' ')}>
               {!this.props.signedIN ? <SignIn/> : <Link className={'heading-text'} to={'/dashboard'}>
                 <span>Dashboard</span></Link>}</li>

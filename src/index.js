@@ -18,6 +18,8 @@ import About from './components/about';
 import Dashboard from './components/dashboard';
 import Event from './components/event';
 import Timeline from './components/timeline';
+import Team from './components/Team-Container';
+import TeamContainer from './components/Team-Container';
 
 // UIKit
 UIKit.use(Icons);
@@ -52,6 +54,7 @@ ReactDOM.render(
           <Route exact path={'/timeline'} component={Timeline}/>
           <Route exact path={'/events/:id'} component={Event}/>
           <Route exact path={'/about'} component={About}/>
+          <Route exact path={'/team'} component={TeamContainer}/>
         </Switch>
         <Footer/>
       </div>
