@@ -33,6 +33,14 @@ class Countdown extends Component {
             <div className="uk-countdown-label uk-text-center">SECS</div>
           </div>
         </div>
+        <ul className="divider-container uk-align-left">
+          <ul className="divider-wrapper uk-align-left">
+            <li className="uk-divider-vertical uk-align-center"></li>
+            <li className="uk-align-center" uk-icon="twitter"></li>
+            <li className="uk-align-center" uk-icon="instagram"></li>
+            <li className="uk-align-center" uk-icon="facebook"></li>
+          </ul>
+        </ul>
         {/* <div className="next-year">SEE YOU NEXT YEAR!</div> */}
       </div>
     )

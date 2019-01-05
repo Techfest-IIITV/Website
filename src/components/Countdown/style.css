@@ -43,3 +43,32 @@
   font-family: 'Roboto Mono', monospace;
   font-size: 20px;
 }
+
+.divider-container {
+  width: 98%;
+  margin-top: 6%;
+  color: #FF6E2C;
+  position: fixed;
+  margin-bottom: 0px;
+  left: 0%;
+  width: 10%;
+}
+
+.uk-divider-vertical {
+  height: 40vh;
+  border-left: 1px solid #FF6E2C;
+  width: 1px;
+  display: flex;
+  flex-flow: column;
+}
+
+.divider-wrapper {
+  margin-top: 10%;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .divider-container {
+    display: none;
+  }
+}
