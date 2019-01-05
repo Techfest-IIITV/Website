@@ -8,16 +8,18 @@ import * as firebase from 'firebase';
 
 import { unregister as unregisterServiceWorker } from './registerServiceWorker';
 import { getState, getStore } from './store';
+
 import 'uikit/dist/css/uikit.min.css';
-import './css/index.css';
+import './styles/index.css';
+
 // Components
 import Root from './components';
-import Header from './components/header';
-import Footer from './components/footer';
-import About from './components/about';
-import Dashboard from './components/dashboard';
-import Event from './components/event';
-import Timeline from './components/timeline';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import About from './components/About';
+import Dashboard from './components/Dashboard';
+import Event from './components/Event';
+import Timeline from './components/Timeline';
 
 // UIKit
 UIKit.use(Icons);
@@ -44,12 +46,12 @@ ReactDOM.render(
 					<Route exact path="/" component={Root} />
 					<Route
 						exact
-						path={'/dashboard'}
+						path="/dashboard"
 						render={() => {
 							if (getState().auth.user) {
 								return <Dashboard />;
 							} else {
-								return <Redirect to={'/'} />;
+								return <Redirect to="/" />;
 							}
 						}}
 					/>
