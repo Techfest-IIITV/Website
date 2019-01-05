@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 import Countdown from './Countdown';
-import EventList from './eventList';
+import EventList from './EventList';
 
 class Home extends React.Component {
 	componentDidMount() {
