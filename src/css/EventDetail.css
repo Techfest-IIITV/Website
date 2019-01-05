@@ -54,12 +54,7 @@
 }
 
 .go-back {
-  border: 1px solid #FF6E2C;
-  padding: 10px 14px;
-  background-color: transparent;
-  color: white;
   cursor: pointer;
-  white-space: nowrap;
 }
 
 .space {
@@ -67,8 +62,7 @@
 }
 
 .contacts {
-  border-left: 3px solid #FF6E2C;
-  padding-left: 8px;
+  color: white;
 }
 
 .header-rules {
@@ -99,4 +93,14 @@
   position: relative;
   top: 0;
   color: #FF6E2C;
+}
+
+.event-name {
+  color: white; 
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.divider {
+  height: 100%;
 }
