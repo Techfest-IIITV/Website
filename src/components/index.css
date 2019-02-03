@@ -1,0 +1,20 @@
+.divider{
+    position: absolute;
+    transform: rotate(90deg);
+    color: white;
+}
+
+.contact {
+    top: 33%;
+    right: 1rem;
+}
+
+.about {
+    top: 77%;
+    right: 1.7rem;
+}
+
+.team {
+    right: 2rem;
+    top: 54%;
+}

@@ -5,6 +5,8 @@ import ReactFullpage from '@fullpage/react-fullpage';
 import Countdown from './Countdown';
 import EventList from './eventList';
 
+import './index.css'
+
 class Home extends React.Component {
 	componentDidMount() {
 		document.body.scrollTop = 0;

@@ -66,7 +66,7 @@ class Header extends React.Component {
 		return (
 			<div id="header" style={{ height: '72px' }}>
 				<nav className="uk-navbar-container uk-margin uk-dark uk-navbar-transparent" uk-navbar="mode: click">
-					<div className="uk-navbar-center">
+					<div className="uk-navbar-right uk-margin-xlarge-right">
 						<ul className="uk-navbar-nav">
 							<li className={[this.props.location.pathname === '/' ? 'uk-active' : ''].join(' ')}>
 								<Link className={'heading-text'} to={'/'}>
@@ -78,11 +78,11 @@ class Header extends React.Component {
 									<span>Timeline</span>
 								</Link>
 							</li>
-							<li className={[this.props.location.pathname === '/about' ? 'uk-active' : ''].join(' ')}>
-								<Link className={'heading-text'} to={'/about'}>
-									<span>About</span>
-								</Link>
-							</li>
+// 							<li className={[this.props.location.pathname === '/about' ? 'uk-active' : ''].join(' ')}>
+// 								<Link className={'heading-text'} to={'/about'}>
+// 									<span>About</span>
+// 								</Link>
+// 							</li>
 							<li className={[this.props.location.pathname === '/dashboard' ? 'uk-active' : ''].join(' ')}>
 								{!this.props.signedIN ? (
 									<SignIn />
